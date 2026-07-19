@@ -1,0 +1,4 @@
+{:schema "etzhayyim.migration/v1"
+ :source {:repository "etzhayyim/root" :revision "6fd297f38fe1b547e1d4c15ead9941c6ebaa3b31" :path "60-apps/etzhayyim-project-public-malak" :tree "c0cbfcc69604fa82a20fe44f058d9d3e8c61ec72" :tracked-files 16 :bytes 80993}
+ :destination {:repository "etzhayyim/com-etzhayyim-app-public-malak"}
+ :identity {:allowed-additions ["README.edn" "migration.edn"]}}
