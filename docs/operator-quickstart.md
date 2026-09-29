@@ -1,6 +1,6 @@
 # Operator quickstart
 
-**`CLAUDE.md` describes what this migration landed. This is that account checked
+**`AGENTS.md` describes what this migration landed. This is that account checked
 against the tree, claim by claim, because two of its claims are inverted.**
 
 `public-malak` is documented as the sanitized, **TLP CLEAR + GREEN only** view of
@@ -17,13 +17,13 @@ git ls-files | wc -l                       # 18
 git ls-files | grep -ci lexicon            # 0
 git ls-files | grep -c 'src/app.ts'        # 1
 git ls-files | grep -c 'data/ingest'       # 0
-git grep -l TLP -- . | grep -v CLAUDE.md   # PROJECT.jsonld
+git grep -l TLP -- . | grep -v AGENTS.md   # PROJECT.jsonld
                                            # kotodama.jsonld
 ```
 
 Those are the actual outputs, run against this tree on 2026-08-15.
 
-| `CLAUDE.md` says | Measured here | |
+| `AGENTS.md` says | Measured here | |
 |---|---|---|
 | "This commit lands … **and 14 lexicons**" | **0 lexicon files** | ✗ inverted |
 | "The worker (`src/app.ts`) … **follow separately**" | **`src/app.ts` is present** | ✗ inverted |
@@ -128,7 +128,7 @@ node <root>/scripts/resource-guard.mjs run build -- \
 
 ## 6. Where the rest lives
 
-Per `CLAUDE.md`, none of it verifiable from here: the 14 `publicMalak/` lexicons
+Per `AGENTS.md`, none of it verifiable from here: the 14 `publicMalak/` lexicons
 and the 923-file crawled corpus stay vendor-side (Option A — this side ingests
 fresh from public ad-library APIs); the BPMN definitions `analyzeAd` and
 `crawlAds` are in `etzhayyim/root` under
